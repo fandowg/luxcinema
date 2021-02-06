@@ -1,0 +1,956 @@
+html,body {
+    width: 100%;
+    height: 100%;
+}
+body {
+	font-family:Arial, Helvetica, 微軟正黑體, sans-serif;
+}
+
+a {
+    color: #333;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+a:hover, a:focus {
+    color: #777;
+    opacity: 1;
+    text-decoration: none;
+}
+
+
+
+
+* {
+  -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+
+.top-sp{
+	background:#999;
+	color:#fff;
+	text-align:center;
+	padding:9px 0;
+	width:100%;
+	font-weight:bolder;
+	font-size:12px;
+	}
+
+
+
+
+
+/*表頭*/
+
+
+.navbar-brand {
+	float: left;
+	height: 90px;
+	padding: 15px 15px;
+	font-size: 18px;
+	line-height: 20px;
+}
+
+
+
+.navbar-brand img{
+	max-width:100%;
+	height:auto;
+	}
+
+
+.navbar{
+	margin-bottom:0;} 
+
+
+.navbar-default {
+	background: #fff;
+	/*  background: linear-gradient(to bottom,#f2f2f2,#fff); */
+
+	box-shadow: 0 1px 1px #eee;
+	border: none;
+	margin-bottom: 0;
+}
+.navbar-nav {
+	padding-top: 20px;
+}
+.navbar-nav>li {
+	font-size: 15px;
+	font-weight: bolder;
+}
+.dropdown-menu>li>a {
+	font-size: 15px;
+	padding: 5px 20px;
+	line-height: 1.42857143;
+	color: #888;
+}
+.navbar-toggle {
+	margin-top: 25px;
+}
+
+.caret {
+	color: #999;
+}
+
+ @media only screen and (max-width: 768px) {
+.navbar-nav {
+	padding-top: 0;
+}
+.navbar-nav .open .dropdown-menu>li>a, .navbar-nav .open .dropdown-menu .dropdown-header {
+	padding: 8px 15px 8px 25px;
+}
+}
+
+@media only screen and (max-width: 990px) {
+
+.navbar-brand{
+
+	height:78px;
+	margin-left:-15px;}
+	
+.navbar-brand img{
+	max-width:80%;}
+	
+
+}
+
+
+
+/*end表頭*/
+
+
+
+/*表頭-單一右下拉*/
+
+.n-right{
+	float:right;
+	list-style:none;
+	margin:20px 0 0 0;
+
+
+	
+	}
+
+.n-right i{
+		font-size:24px;
+		color:#999;
+
+	}
+
+.n-right .dropdown-toggle{
+	border:#dfdfdf 1px solid;
+	padding:6px 10px;
+	display:inline-block;
+
+	}
+
+
+
+/*end 表頭-單一右下拉*/
+
+
+
+
+
+
+/*step1 選電影場次*/
+
+.tkt {
+	min-height: 65vh;
+	position: relative;
+	margin: 30px 0;
+}
+.tkt-left {
+}
+.tkt-left img {
+	max-width: 100%;
+	height: auto;
+}
+.tkt-right {
+	background: #f6f6f6;
+	padding: 30px;
+	text-align: center;
+	width: 42%;
+	position: absolute;
+	right: 60px;
+	top: 65px;
+}
+.tkt-right h2 {
+	margin: 0;
+	padding: 10px 0 30px 0;
+	font-size: 25px;
+	font-weight: bolder;
+	color: #d7000f;
+}
+.tkt-right .sky-form .label {
+	text-align: center;
+	color: #d7000f;
+	font-size: 18px;
+}
+.tkt-btn {
+	background: #d7000f;
+	padding: 10px 30px;
+	border: 0;
+	color: #fff;
+}
+.tkt-box {
+	height: 500px;
+
+	margin: 0 auto;
+}
+
+
+
+
+@media only screen and (max-width: 990px) {
+	
+
+.tkt-right h2 {
+	text-align: left;
+}
+.tkt-box {
+	height:300px;
+
+
+}
+.tkt-right .sky-form .label {
+	text-align: left;
+}
+.tkt-right {
+	padding: 15px;
+	position: static;
+	width: 100%;
+}
+
+.tkt-right .sky-form .label {
+	margin-bottom: 10px;
+}
+	
+	
+}
+
+
+
+
+
+
+
+
+/*end step1 選電影場次*/
+
+/*選票種與張數*/
+
+
+.tkt-2{
+		min-height:65vh;
+	padding:30px 0 60px 0;
+	}
+
+
+.tkt-sel{
+	margin-bottom:60px;
+	}
+
+.tkt-sel h2{
+	font-size:30px;
+	color:#d7000f;
+	}
+
+
+.tkt-sel p{
+	font-size:18px;
+	color:#fff;
+	line-height:30px;
+	}
+
+.sel-box{
+	border:#dfdfdf 1px solid;
+	padding:10px;
+	background-color: #fff;
+	margin-bottom:20px;
+	}
+.sel-tit{
+	font-size:25px;
+	font-weight:bolder;
+
+	display:block;}
+
+
+.sel-tit *{
+	transition:all .35s;}
+
+
+
+.sel-tit-red{
+	color:#d7000f;}
+
+a.sel-tit-red:hover , a.sel-tit-red:focus{
+	color:#d7000f;}
+
+
+.sel-btn-box{
+	margin-top:20px;}
+
+
+.sel-btn{
+	font-size:18px;
+	line-height:30px;
+	background:#666;
+	padding:6px 30px;
+	color:#fff;
+	display:inline-block;
+	margin-right:10px;
+	margin-bottom:10px;
+	}
+.sel-btn:hover{
+	background:#d7000f;
+	color:#fff;}
+
+.top-box{
+	background:#f2f2f2;
+	text-align:center;
+	}
+
+.top-box h3{
+	font-size:25px;
+	
+	color:#fff;
+	padding:10px;
+	background:#666;
+	}
+
+
+.top-box:hover h3{
+	background:#d7000f;
+	transition:all .35s;}
+
+
+.top-box h3.no-use{
+	background:#ccc;}
+
+.no-use{
+	background:#ccc;}
+
+
+.no-use:hover{
+	background:#ccc;
+	}
+
+
+
+.top-box-info{
+	text-align:center;
+	width:30%;
+	display:inline-block;
+	margin:20px 0 30px 0;
+	font-size:18px;}
+
+.top-box-info .dis{
+	text-decoration:line-through;}
+
+.tkt-number{
+	padding-top:30px;
+	border-top:#dfdfdf 1px solid;}
+
+.tkt-number h3{
+	
+    font-size: 30px;
+    color: #d7000f;	
+	
+	}
+
+.num-box{
+	margin-top:30px;}
+
+
+.num-btn{
+	font-size:16px;
+	background:#333;
+	color:#fff;
+	display:inline-block;
+	width:40px;
+	height:40px;
+	text-align:center;
+	line-height:40px;
+	margin-right:5px;}
+
+.num-btn:hover{
+	color:#fff;
+	background:#d7000f;}
+
+.num-box .num-sel{
+	background:#d7000f;
+	}
+
+.num-code{
+	padding:30px 0;}
+
+.num-code-input{
+	font-size:18px;
+	padding:10px 0;
+	color: #fff;
+	}
+
+.num-code-input input{
+	padding:5px;}
+
+.num-code-input i{
+	color: #fff;
+	font-size:30px;
+
+	}
+
+.tkt-in{
+	background:#666;
+	padding:30px;
+	color:#fff;
+	overflow:hidden;
+	margin-bottom:30px;}
+
+.tkt-in h3{
+	font-size:25px;
+	margin:0;
+	padding:0 0 20px 0;}
+
+
+.tkt-in p{
+	font-size:18px;
+	float:left;}
+
+
+.tkt-in p span{
+	font-size:18px;
+	font-weight:bolder;
+	padding:0 5px;}
+
+
+.tkt-in-btn{
+	background:#fff;
+	padding:10px 40px;
+	color:#666;
+	font-size:18px;
+	display:inline-block;
+	float:right;}
+
+
+.tkt-info{
+	background:#d7000f;
+	padding:15px 30px;
+	color:#fff;
+	font-size:21px;
+	font-weight:bolder;
+	overflow:hidden;
+	margin-bottom:60px;
+	}
+
+.tkt-info i {
+	font-size:24px;
+	color:#000;
+	margin-left:10px;}
+	
+
+.tkt-info-one{
+	border-bottom:#fff 1px solid;
+	overflow:hidden;
+	padding:10px 0 10px 0;
+
+
+
+	min-height:81px;
+	}
+
+.no-buttom{
+
+
+	border:none;}
+
+.info-left{
+	width:20%;
+	float:left;
+	}
+
+
+.info-right{
+		width:80%;
+	float:left;
+
+	}
+
+.info-right .info-big{
+	font-size:26px;
+	line-height:26px;
+
+
+	}
+
+.info-right .info-small{
+	font-size:14px;
+
+
+
+
+	
+	}
+
+
+.tkt-info-left{
+	width:50%;
+	float:left;
+	border-right:#fff 1px solid;
+	padding-right:30px;
+	}
+
+
+.tkt-info-right{
+	width:50%;
+	padding-left:30px;
+	float:left;
+}
+
+
+
+/*end 選票種與張數*/
+
+
+
+/*按鈕*/
+
+.btn-b,a.btn-b,.sky-form a.btn-b{
+    border: 0;
+    background: #d7000f;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.btn-g,a.btn-g,.sky-form a.btn-g{
+	border: 0;
+    margin-right: 10px;
+    background: #999;
+    color: #fff;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.mem-btn-box {
+    border-top: 1px solid #e9e9e9;
+    padding-top: 40px;
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+}
+
+
+
+
+/*end按鈕*/
+
+
+
+/*步驟*/
+
+.step-all {
+	background: #000;
+
+}
+.step_box {
+	font-size: 18px;
+
+	text-align: center;
+}
+.step_box ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	overflow: hidden;
+}
+.step_box li {
+	color: #e5002d;
+	float: left;
+border: solid #e5002d 1px;
+	padding: 30px 0;
+	margin: 15px 0.5% 15px 0.5%;
+	width: 15.8%;
+	text-align: center;
+}
+.step_box li.sel {
+	background: #d7000f;
+	color: #fff;
+}
+.step_box li p {
+	font-size: 16px;
+}
+.step_box li h4 {
+
+	margin: 0;
+}
+.step_box li:first-child {
+	margin-left: 0px;
+}
+.step_box li:last-child {
+	margin-right: 0px;
+}
+.step-m {
+	display: none;
+}
+
+
+@media only screen and (max-width: 990px) {
+
+
+.step_box li:last-child {
+	margin-right: 5px;
+}
+.step_box li:first-child {
+	margin-left: 5px;
+}
+.step_box li {
+	padding: 15px 0;
+	width: 100%;
+}
+.step-all {
+	display: none;
+}
+.step-m {
+	display: block;
+}
+
+.tkt-info-one {
+	border:none;}
+
+.info-left {
+	width:25%;}
+
+.info-right {
+	width:75%;}
+
+}
+
+
+
+
+
+
+
+/*end步驟*/
+
+
+/*劃位*/
+
+.check {
+    width: 100%;
+    background: #FFF;
+    border: 1px solid #999; 
+    padding: 30px;
+	margin-bottom:60px;
+}
+.check-left{
+	float:left;}
+
+.check-left h4 span{
+	color:#f00;}
+
+
+.check-right{
+	float: right;
+	text-align:right;}
+
+.seat-tit{
+	text-align:center;
+	margin-top:30px;
+	background:url(../images/lux_Screen.png) no-repeat center;
+	height:40px;}
+
+
+
+
+.seat-cont{
+	max-width:990px;
+	margin:0 auto 60px auto;
+	height:300px;
+	background:#f6f6f6;}
+
+
+
+@media only screen and (max-width: 990px) {
+.check {
+	padding:10px;}
+
+}
+/*end劃位*/
+
+
+
+/*確認資訊*/
+
+.booking_info_frist {
+    text-align: left;
+    padding-right: 10px;
+    font-size: 18px;
+ 
+    float: left;
+    width:48%;
+	margin-right:2%;
+}
+
+
+.final-info-box{
+	    width: 50%;
+    float: right;
+	}
+
+
+.final-info {
+	padding:30px;
+	margin-bottom:30px;   
+
+    background: #d7000f;
+}
+
+.bottom-line {
+    border-bottom: #fff 1px solid;
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+
+.final-info ul {
+    color: #FFF;
+    overflow: hidden;
+    font-size: 21px;
+    list-style: none;
+	padding:0;
+}
+
+
+
+.final-info li.tit {
+    width: 20%;
+    float: left;
+}
+
+.final-info li {
+    padding-bottom: 10px;
+    line-height: 30px;
+    width: 80%;
+    float: left;
+}
+
+.page_title3 {
+   
+    font-size: 25px;
+    color: #e6002d;
+}
+
+
+
+.txt-b {
+    font-size: 26px;
+}
+
+.txt-s {
+    font-size: 14px;
+}
+
+.txt1 {
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 0px;
+    line-height: 24px;
+    text-align: justify;
+
+}
+
+.final-info-tit1 {
+    font-size: 26px;
+    line-height: 35px;
+    color: #d7000f;
+    font-weight: bolder;
+ 
+    padding-bottom: 5px;
+
+}
+
+.final-info-tit2 {
+    font-size: 26px;
+    line-height: 35px;
+    color: #fff;
+    padding-bottom: 10px;
+    font-weight: bolder;
+
+}
+
+
+
+
+.final-info-red {
+    color: #d7000f;
+}
+
+
+@media only screen and (max-width: 990px) {
+.booking_info_frist {
+	margin:0 0 30px 0;
+	width:100%;
+	float:none;}
+
+.final-info-box {
+	width:100%;
+	float:none;}
+
+.final-info {
+	
+	padding:15px;}	
+	
+.final-info li.tit {
+	width:100%;
+	}
+
+
+.final-info li{
+	width:100%;
+	}
+
+	
+}
+
+
+/*end確認資訊*/
+
+
+/*註冊*/
+
+.sign-box {
+	background: #fff;
+	margin: 30px auto;
+	border: #dfdfdf 1px solid;
+	max-width: 600px;
+	overflow: hidden;
+	padding: 40px;
+}
+.sign-box p {
+	font-size: 16px;
+	margin: 0;
+	text-align: center;
+	padding-top: 20px;
+}
+.sign-box h4 {
+	margin-bottom: 0;
+	font-size: 21px;
+	font-weight:bolder;
+
+	text-align: center;
+}
+a.f-psw:hover {
+	color: #aaa;
+}
+.sign-box .sky-form .label {
+	text-align: right;
+	font-size: 16px;
+	letter-spacing: 3px;
+	padding: 10px 0 0 0;
+	color: #666;
+}
+
+
+@media only screen and (max-width: 990px) {
+.sign-box {
+    padding: 40px 15px;
+}
+
+.sign-box .sky-form .label {
+    text-align: center;
+    margin-bottom: 10px;
+}
+}
+/*end註冊*/
+
+/*totop.js use*/
+.scrollup {
+    opacity: .5;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 999;
+    color: #333;
+    font-size: 2.5em;
+}
+.scrollup:hover {
+    opacity: 1;
+    color: #15aba0;
+}
+
+
+
+
+
+@media only screen and (max-width: 1220px) {
+}
+@media only screen and (max-width: 990px) {
+
+.tkt-in{
+	padding:30px 15px;
+	}
+
+.tkt-info{
+	padding:30px 15px;}
+
+.num-code-input input {
+    padding: 5px;
+	width:70%;
+}	
+
+.sel-btn {
+	display:block;}
+
+.tkt-info-left {
+	width:100%;
+	float:none;
+	border:none;
+	padding:0;}
+
+.tkt-info-right {
+	width:100%;
+	float:none;
+	border:none;
+	padding:0;}
+
+	
+	
+}
+@media only screen and (max-width: 768px) {
+}
+/*iPhone6 plus以下*/
+@media only screen and (max-width: 414px) {
+}
+/*iPhone6以下*/
+@media only screen and (max-width: 375px) {
+.tkt-box {
+	height:260px;
+
+
+}	
+	
+}
+/*iPhone5以下*/
+@media only screen and (max-width: 320px) {
+.tkt-box {
+	height:220px;
+
+
+}	
+	
+}
